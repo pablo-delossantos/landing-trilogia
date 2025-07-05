@@ -1,8 +1,13 @@
-import "./App.css"
+import MainLayout from './layout/MainLayout'
+import Hero from './sections/Hero/Hero'
 
-export default function App() {
-  return <>
-  
-  </>
+function App() {
+  return (
+    <MainLayout>
+      <Hero />
+      {/* otras secciones */}
+    </MainLayout>
+  )
 }
 
+export default App

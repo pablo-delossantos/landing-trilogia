@@ -1,0 +1,39 @@
+landing-trilogia/
+├── src/
+│   ├── assets/
+│   │   ├── images/
+│   │   └── icons/
+│   ├── components/            # Reutilizables a lo largo del sitio
+│   │   ├── Button/
+│   │   │   ├── Button.tsx
+│   │   │   └── Button.module.css
+│   │   ├── Link/
+│   │   ├── Accordion/         # Para lista de clientes
+│   │   └── Input/             # Para formulario de contacto
+│   ├── sections/
+│   │   ├── Header/
+│   │   │   ├── Header.tsx     # Logo + navegación + toggle menú
+│   │   │   └── Header.module.css
+│   │   ├── Hero/
+│   │   │   ├── Hero.tsx       # Título, subtítulo, CTA
+│   │   │   └── Hero.module.css
+│   │   ├── Intro/             # Texto breve + separador
+│   │   ├── Services/          # Grid de 6 servicios (cards locales)
+│   │   ├── QuoteMagic/        # Bloque “Qualunque tecnologia…”
+│   │   ├── Process/           # 4-5 pasos (números + texto)
+│   │   ├── Clients/           # Acordeón con nombres/clientes
+│   │   ├── InspirationQuote/  # Quote pequeño
+│   │   ├── BigQuote/          # Quote grande con imagen
+│   │   ├── About/             # Texto “no, non siamo giovani…”
+│   │   ├── Awards/            # Logos y premios
+│   │   ├── Gallery/           # Grid de imágenes con modal local
+│   │   ├── Contact/           # Formulario + datos
+│   │   └── Footer/            # Links legales + RRSS
+│   ├── layout/
+│   │   └── MainLayout.tsx
+│   ├── styles/                # variables.css, mixins.scss (opcional)
+│   ├── hooks/                 # useToggle, etc.
+│   ├── utils/                 # helpers varios
+│   ├── App.tsx
+│   └── main.tsx
+└── ...

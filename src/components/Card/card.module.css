@@ -1,0 +1,30 @@
+.card {
+  background: var(--gray-dark-medium);
+  padding: 2rem;
+  border: 1px solid var(--primary);
+  border-radius: 0.5rem;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover {
+  border-color: var(--primary);
+  transform: translateY(-4px);
+}
+
+.icon {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 300;
+  color: var(--text-light);
+  margin: 0;
+}

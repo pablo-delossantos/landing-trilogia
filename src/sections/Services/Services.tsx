@@ -7,6 +7,40 @@ import {
   AlertTriangle,
   Recycle,
 } from "tabler-icons-react"
+import Card from "@/components/Card/Card"
+
+const services = [
+  {
+    icon: <ClipboardList />,
+    title: "Gestión integral",
+    description: "Diseño de plan anual y seguimiento de indicadores.",
+  },
+  {
+    icon: <BuildingFactory2 />,
+    title: "Supervisión técnica",
+    description: "Visitas a planta y reportes comprensibles.",
+  },
+  {
+    icon: <Presentation />,
+    title: "Capacitación",
+    description: "Charlas dinámicas, simulacros y e‑learning.",
+  },
+  {
+    icon: <ScaleOutline />,
+    title: "Asesoría especializada",
+    description: "BPM, PCI, instalaciones eléctricas y más.",
+  },
+  {
+    icon: <AlertTriangle />,
+    title: "Planes de emergencia",
+    description: "Mapas, brigadas y simulacros.",
+  },
+  {
+    icon: <Recycle />,
+    title: "Evaluaciones ambientales",
+    description: "Mediciones, diagnóstico y acciones.",
+  },
+]
 
 export default function Services() {
   return (
@@ -14,41 +48,9 @@ export default function Services() {
       <h2 className={styles.title}>Servicios</h2>
 
       <div className={styles.grid}>
-        <div className={styles.card}>
-          <ClipboardList className={styles.icon} />
-          <h3>Gestión integral</h3>
-          <p>Diseño de plan anual y seguimiento de indicadores.</p>
-        </div>
-
-        <div className={styles.card}>
-          <BuildingFactory2 className={styles.icon} />
-          <h3>Supervisión técnica</h3>
-          <p>Visitas a planta y reportes comprensibles.</p>
-        </div>
-
-        <div className={styles.card}>
-          <Presentation className={styles.icon} />
-          <h3>Capacitación</h3>
-          <p>Charlas dinámicas, simulacros y e‑learning.</p>
-        </div>
-
-        <div className={styles.card}>
-          <ScaleOutline className={styles.icon} />
-          <h3>Asesoría especializada</h3>
-          <p>BPM, PCI, instalaciones eléctricas y más.</p>
-        </div>
-
-        <div className={styles.card}>
-          <AlertTriangle className={styles.icon} />
-          <h3>Planes de emergencia</h3>
-          <p>Mapas, brigadas y simulacros.</p>
-        </div>
-
-        <div className={styles.card}>
-          <Recycle className={styles.icon} />
-          <h3>Evaluaciones ambientales</h3>
-          <p>Mediciones, diagnóstico y acciones.</p>
-        </div>
+        {services.map((s, i) => (
+          <Card key={i} {...s} />
+        ))}
       </div>
 
       <p className={styles.note}>

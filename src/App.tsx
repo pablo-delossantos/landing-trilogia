@@ -1,11 +1,14 @@
-import MainLayout from './layout/MainLayout'
-import Hero from './sections/Hero/Hero'
+import MainLayout from "./layout/MainLayout"
+import Hero from "./sections/Hero/Hero"
+import Intro from "./sections/Intro/Intro"
+import Services from "./sections/Services/Services"
 
 function App() {
   return (
     <MainLayout>
       <Hero />
-      {/* otras secciones */}
+      <Intro />
+      <Services />
     </MainLayout>
   )
 }

@@ -2,11 +2,22 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #000;
   color: #fff;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: var(--bg-dark);
 }
 
 main {
   flex: 1;
+}
+
+
+
+body {
+    height: 100vh;
+    font-size: 100%;
+    font-family: var(--app-font);
+    color: var(--text-light);
 }
